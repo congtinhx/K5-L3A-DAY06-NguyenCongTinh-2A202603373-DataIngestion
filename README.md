@@ -1,4 +1,4 @@
-# Day 06 – Data Ingestion – Nguyễn Công Tình (2A202603373)
+# Day 06 – Data Ingestion – Nguyễn Công Tĩnh (2A202603373)
 
 Pipeline: PDF → chuẩn hóa → chunk (A/B/C) → embedding local → PostgreSQL + pgvector → benchmark Hit@1 / Evidence Hit@3 → chấm tay 3 khía cạnh.
 
