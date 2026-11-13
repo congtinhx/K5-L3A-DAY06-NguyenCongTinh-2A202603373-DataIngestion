@@ -1,0 +1,16 @@
+{
+  "run_at": "2026-11-14T00:57:12+07:00",
+  "before": {
+    "A": 277,
+    "B": 157
+  },
+  "after": {
+    "A": 277,
+    "B": 157
+  },
+  "embedded_on_rerun": {
+    "A": 0,
+    "B": 0
+  },
+  "no_duplicates": true
+}

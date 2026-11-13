@@ -1,0 +1,61 @@
+{
+  "run_at": "2026-11-14T00:57:12+07:00",
+  "embedder": {
+    "provider": "local sentence-transformers",
+    "model": "intfloat/multilingual-e5-small",
+    "dimensions": 384,
+    "max_seq_length": 512,
+    "query_prefix": "query: ",
+    "doc_prefix": "passage: ",
+    "normalized": true,
+    "device": "cpu"
+  },
+  "read_seconds": 5.67,
+  "vector_store": "PostgreSQL 16 + pgvector 0.8.7 (docker image pgvector/pgvector:0.8.7-pg16)",
+  "metric": "cosine (<=>), exact search (khong dung index ANN)",
+  "cost_usd": 0,
+  "indexes": {
+    "A": {
+      "chunk_count": 277,
+      "min_chars": 52,
+      "median_chars": 500,
+      "mean_chars": 462.1,
+      "max_chars": 500,
+      "total_chars": 127998,
+      "config": {
+        "chunking": "fixed_size",
+        "size": 500,
+        "overlap": 50,
+        "index": "A",
+        "use_filter": false
+      },
+      "chunk_seconds": 0.0,
+      "embed_and_store_seconds": 0.1,
+      "embedded_now": 0,
+      "written": 0,
+      "deleted_obsolete": 0,
+      "rows_in_db": 277
+    },
+    "B": {
+      "chunk_count": 157,
+      "min_chars": 9,
+      "median_chars": 850,
+      "mean_chars": 740.5,
+      "max_chars": 999,
+      "total_chars": 116251,
+      "config": {
+        "chunking": "by_paragraph",
+        "max_size": 1000,
+        "index": "B",
+        "use_filter": false
+      },
+      "chunk_seconds": 0.02,
+      "embed_and_store_seconds": 0.1,
+      "embedded_now": 0,
+      "written": 0,
+      "deleted_obsolete": 0,
+      "rows_in_db": 157
+    }
+  },
+  "total_seconds": 19.4
+}

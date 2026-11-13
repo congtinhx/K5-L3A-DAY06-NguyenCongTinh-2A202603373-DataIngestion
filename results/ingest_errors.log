@@ -1,0 +1,4 @@
+wdr2024_part1 p1: SKIPPED (khai bao trong config, khong phai noi dung)
+wdr2024_part1 p16: NOTES_REMOVED (da cat phan Notes/References)
+wdr2024_part1 p40: CONTROL_CHARS_REMOVED 1 ky tu rac (vd NUL 0x00)
+wdr2024_part1 p44: NOTES_REMOVED (da cat phan Notes/References)

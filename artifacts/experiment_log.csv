@@ -1,4 +1,4 @@
-strategy,chunking,chunk_size,overlap,metadata,filter,vectorizer,hypothesis,dev_hit1,dev_hit3,test_hit1,test_hit3,notes
-A,,,,,,,,,,,,
-B,,,,,,,,,,,,
-C,,,,,,,,,,,,
+﻿strategy,chunking,chunk_size,overlap,metadata,filter,vectorizer,hypothesis,dev_hit1,dev_hit3,test_hit1,test_hit3,notes
+A,fixed_size,500,50,"document_id,source,page,printed_page,section,char_start,char_end",none,intfloat/multilingual-e5-small,(ghi lai sau khi chay) Cat co dinh 500/50 de cat doi cau bang chung o ranh gioi -> Evidence Hit@3 thap hon B,12/16,12/16,3/6,4/6,"277 chunk, embed+store 38.66s, $0. Truot dev q04 q07 q09 q13 deu page_only (evidence bi cat o ranh gioi 500 ky tu); test t02 t03 chunk co dap an nhung mat 1-2 ky tu dau/cuoi evidence. Coherence 0.90/2."
+B,by_paragraph,1000,0,"document_id,source,page,printed_page,section,char_start,char_end",none,intfloat/multilingual-e5-small,"(ghi lai sau khi chay) Gom cau lien tiep <=1000 ky tu, heading mo chunk moi -> giu tron cau nen Hit@3 cao hon A, it chunk hon",13/16,15/16,3/6,5/6,"157 chunk, embed+store 51.84s, $0. Truot q14 (evidence o cuoi chunk truoc, top1 page_only) va t04 (cau 82 percent bi loang trong chunk dai, top3 la doan tong quan trang 3/5/6). Coherence 1.70/2."
+C,by_paragraph,1000,0,"document_id,source,page,printed_page,section,char_start,char_end",section (chi khi cau hoi co filter),intfloat/multilingual-e5-small,(ghi lai sau khi chay) Dung chung index B + loc section -> top-3 dung chuong voi cau co filter; Hit co the khong doi,13/16,15/16,3/6,5/6,"Dung chung 157 chunk cua B. Hit giong B; tuan thu filter 2/2 dev va 2/2 test (B: 1/2, 1/2). Filter khong cuu duoc q14 vi chunk nhieu cung chuong 2."
